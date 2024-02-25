@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Körsbär</title>
+
+</head>
+
+<body>
+	<section>
+		<div id="SvartRektangel">
+			<p id="sökMenyText">SÖK</p>
+			      <p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			       <nav class="submenu" id="submenu2">
+					<ul>
+						<li><a href="#">ÖPPETTIDER</a></li>
+						<li><a href="OmOss.html">OM OSS</a></li>
+						<li><a href="HittaHit.html">HITTA HIT</a></li>
+						<li><a href="#">KAFE</a></li>
+						<li><a href="Sortiment.html">SORTIMENT</a></li>
+						<li><a href="#">TJÄNSTER</a></li>
+						<li><a href="#">PRESENTKORT</a></li>
+				    	</ul>
+			       </nav>
+		       
+			       <div id="grönaRutanHem">
+				       <a href="index.html">
+					       <p id="hemText">HEM</p>
+				       </a>
+			</div>
+		       </div>  
+	</section>
+
+	<head>
+		<div id="grönRuta">
+			<p id="rubrik">KÖRSBÄR</p>
+			<p id="text">Körsbärsträd trivs bäst i sol och väldränerad jord, gärna i öst- eller västläge med skydd mot nordanvind. Beskäres mycket sparsamt, endast vid behov i JAS. I Sverige odlar vi framförallt två arter av körsbär, surkörsbär (Prunus cerasus) och sötkörsbär (Prunus avium). Sötkörsbär är självsterila och behöver alltså ett kompisträd av annat sortnamn för att få bär. De blir stora, höga träd och är mindre härdiga än surkörsbär. Det finns sortnamn av surkörsbär som har mycket söta och goda bär. De delas upp i moreller (med helt mörka bär) och amareller (med rött skal och ljust fruktkött). Surkörsbär är oftast självfertila.</p>
+		</div>
+	</head>
+
+	
+	<!-- Rad 1 -->
+	<div id="Sort1" class="bakgrund">
+		<p class="rubrikRuta">Carmine Jewel Prunus cerasus </p>
+		<img class="boxImage" src='https://imgur.com/kBMXIzS.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox1')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox1" class="InfoBox">
+		    <p class="infoText"> Buskkörsbär. Mycket goda, sötsyrliga bär med ton av mandel. Mognar tidigt. Självfertil. Finns både som buske och som litet stamträd. Zon 6.
+			  </p>
+		</div>
+		<div class="pris">
+		    <p class="textRuta">480kr</p>
+		</div>
+	    </div>
+
+	    <div id="Sort2" class="bakgrund">
+		<p class="rubrikRuta">Chokladkörsbär Prunus cerasus</p>
+		<img class="boxImage" src='https://imgur.com/ivnhtot.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox2')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox2" class="InfoBox">
+		    <p class="infoText"> 
+			Buskkörsbär. Litet, mycket härdigt, kanadensiskt buskkörsbär med goda bär. Rotäkta. 1,8m. Finns både som buske och som litet stamträd. Självfertil. Zon 6.
+		    </p>
+		</div>
+		<div class="pris">
+		    <p class="textRuta">480kr</p>
+		</div>
+	    </div>
+
+	<div id="Sort3" class="bakgrund">
+		<p class="rubrikRuta">Snövit Prunus tomentosa</p>
+		<img class="boxImage" src='https://imgur.com/1f0Twsr.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox3')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox3" class="InfoBox">
+		    <p class="infoText"> 
+			Buskkörsbär. Vita(!) söta körsbär som fåglarna ej hittar. Rotäkta. 2-2,5m. Finns både som buske och som litet stamträd. Zon 5-6.  </p>
+		</div>
+		<div class="pris">
+		    <p class="textRuta">480kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort4" class="bakgrund">
+		<p class="rubrikRuta">HUVIMAJA
+			Prunus cerasus</p>
+		<img class="boxImage" src='https://imgur.com/fjUH4hY.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox4')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox4" class="InfoBox">
+		    <p class="infoText"> 
+			Surkörsbär. Finskt körsbär av amarelltyp. Stora, söta bär. Ger fort skörd. Zon 5-6.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <!-- Rad 2 -->
+
+	 <div id="Sort5" class="bakgrund">
+		<p class="rubrikRuta">Sikkola
+			Prunus cerasus</p>
+		<img class="boxImage" src='https://imgur.com/PpUI6zR.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox5')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox5" class="InfoBox">
+		    <p class="infoText"> 
+			Surkörsbär. Små, relativt söta med ljust fruktkött. Zon 6.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort6" class="bakgrund">
+		<p class="rubrikRuta">Hultsjö svarta Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/zzVtWIR.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox6')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox6" class="InfoBox">
+		    <p class="infoText"> 
+			Sötkörsbär från Småland. Angenämt söta bär med viss syra. Passar som färskfrukt. Mognar tidigt. Starkväxande. Samplanteras med annat sötkörsbär för att ge skörd. Zon 4-5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort7" class="bakgrund">
+		<p class="rubrikRuta">Iput
+			Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/A6MoS1U.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox7')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox7" class="InfoBox">
+		    <p class="infoText"> 
+			Sötkörsbär. Frukten är mycket stor med mörkrött, nästan svart skal. Fruktköttet är rött, saftigt och sött. Mycket god frukt för färskkonsumtion. Delvis självfertil sort. Zon 4-5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort8" class="bakgrund">
+		<p class="rubrikRuta">Leningradblack
+			Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/oVDvdLs.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox8')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox8" class="InfoBox">
+		    <p class="infoText"> 
+			Sötkörsbär. Vacker, nästan svart frukt som är god att äta men även passande i hushållet. Stort träd som ger riklig skörd. Samplanteras med annan sötkörsbärssort. Vinterhärdig. Zon 4-5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <!-- Rad 3 -->
+
+	 <div id="Sort9" class="bakgrund">
+		<p class="rubrikRuta">Lönneberga
+			Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/zzVtWIR.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox9')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox9" class="InfoBox">
+		    <p class="infoText"> 
+			 
+			Sötkörsbär från Småland. Goda bär med endast liten syrlighet. Starkväxande sort. Samplanteras med annat sötkörsbär. Zon 4.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort10" class="bakgrund">
+		<p class="rubrikRuta">Vytenu Geltonoi Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/nJShALZ.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox10')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox10" class="InfoBox">
+		    <p class="infoText"> Sötkörsbär. Vackert lysande, gula frukter som mognar i slutet av juli. Frukten är söt, nästan som karameller, utan nämnvärd syra. Starkväxande sort som kräver beskärning för att få bra form. Ej självfertil. Zon 4-5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort11" class="bakgrund">
+		<p class="rubrikRuta">Zafir
+			Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/54JkPCH.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox11')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox11" class="InfoBox">
+		    <p class="infoText"> Sötkörsbär. Härstammar från småländska höglandet. Mörkröda delikatessbär med liten kärna. Medeltidig sort som snabbt ger stora skördar. Svagväxande körsbärsträd. Samplanteras med annat sötkörsbär. 4-5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort12" class="bakgrund">
+		<p class="rubrikRuta">Rauhala
+			Prunus cerasus</p>
+		<img class="boxImage" src='https://imgur.com/Iozk8Fd.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox12')"> 
+		    <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox12" class="InfoBox">
+		    <p class="infoText"> 
+			 
+			Surkörsbär. Härdig körsbärssort av morelltyp. Frukterna är mörkröda och syrliga. Självfertil. Zon 5.
+			</div>
+		<div class="pris">
+		    <p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+	 <!-- Rad 4 -->
+	
+	 
+
+	<div id="Sort13" class="bakgrund">
+		<p class="rubrikRuta">Lettisk Låg
+			Prunus cerasus</p>
+		<img class="boxImage" src='https://imgur.com/54JkPCH.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox13')"> 
+	   	 <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox13" class="InfoBox">
+	    	<p class="infoText"> 
+			Buskkörsbär. Vackra, mörkröda bär som är goda och söta. Mognar två veckor tidigare än vanliga körsbär. Superhärdig sort. Rotäkta och självfertil. Finns som buske. 2,5-3m. Zon 6-7.
+			</div>
+		<div class="pris">
+	    		<p class="textRuta">480kr</p>
+		</div>
+	 </div>
+
+	 <div id="Sort14" class="bakgrund">
+		<p class="rubrikRuta">Vytrnu Geltonoi 
+			Prunus avium</p>
+		<img class="boxImage" src='https://imgur.com/oVDvdLs.jpg' alt='Exempelbild'>
+		<div class="info" onclick="showInfo('InfoBox14')"> 
+	   	 <p class="textRuta">INFO</p>
+		</div>
+		<!-- Ny div för att visa information -->
+		<div id="InfoBox14" class="InfoBox">
+	    	<p class="infoText"> 
+			Sötkörsbär. Goda mörkröda frukter. Behöver samplanteras med annat sötkörsbär. Zon 4-5.
+			</div>
+		<div class="pris">
+	    		<p class="textRuta">750kr</p>
+		</div>
+	 </div>
+
+
+	
+
+</body>
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+
+	
+        function showInfo(infoBoxId) {
+            // Göm alla InfoBox
+            var allInfoBoxes = document.querySelectorAll('.InfoBox');
+            allInfoBoxes.forEach(function(box) {
+                box.style.display = 'none';
+            });
+
+            // Visa den valda InfoBox
+            var selectedInfoBox = document.getElementById(infoBoxId);
+            if (selectedInfoBox) {
+                selectedInfoBox.style.display = 'flex';
+            }
+        }
+    
+    </script>
+    
+</html>

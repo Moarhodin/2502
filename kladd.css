@@ -1,0 +1,37 @@
+
+/*skriva ut*/
+@media print {
+	body {
+	    background-color: #fff; /* Vit bakgrundsfärg för utskrift */
+	    color: black; /* Svart textfärg för utskrift */
+	}
+
+	#grönRuta {
+	    display: none; /* Dölj den gröna rutan vid utskrift */
+	}
+
+	#rubrik, #text {
+	    color: black; /* Svart textfärg för utskrift */
+	    
+	}
+
+	#table{
+	    page-break-inside: avoid;
+	    
+	}
+    }
+
+/*bakgrund*/
+body {
+	background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+}
+
+
+<p id="rubrikInfo">INFORMATION</p>
+			<p id="textInfo">ADRESS: Holmsjön 70</p>
+			<p id="textInfo">905 96 Umeå</p>
+			<p id="textInfo">TEL:072-273 35 84</p>
+			<p id="textInfo">MAIL:info@smultronstaellet.se</p>
+			<a href="https://www.instagram.com/smultronstaellet_i_norr/" target="_blank" class="instagram-link">Besök oss på instagram</a>
+		
+

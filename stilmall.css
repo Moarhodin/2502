@@ -1,0 +1,618 @@
+
+ /*För alla sidor*/  
+   #SvartRektangel {
+	/* Svart ruta ovanpå bakgrunden */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1cm; /* Tjockleken på den svarta rutan */
+	background-color: black;
+	display: flex; /* Använd flexbox */
+	align-items: center; /* Centrera vertikalt */
+	z-index: 1000; /* Så att den ligger över bakgrundsbilden */
+	justify-content: right; /* Placera texterna horisontellt med mellanrum emellan */
+	gap: 20px;   
+    }
+
+    	.sökMenyText {
+		color: white; 
+		font-size: 24px; 
+		cursor: pointer;
+		max-width: 152px; 
+    	}
+
+    	.submenu {
+		display: none;
+		position: absolute;
+		top: 1cm;
+		right: 0;
+		background-color: black;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+		padding: 30px;
+   	}
+
+    	.submenu a {
+		color: white;
+		text-decoration: none;
+		font-size: 24px;
+		cursor: pointer;
+    	}
+
+    #grönaRutanHem {
+	/* Grön ruta ovanpå det svarta */
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex; /* Använd flexbox */
+	align-items: center; /* Centrera vertikalt */
+	justify-content: center; /* Centrera horisontellt */
+	width: 174px;
+	height: 1cm; /* Tjockleken på den svarta rutan */
+	background-color:#296829; /* Hexadecimal kod för ren grön färg */
+	z-index: 2; /* Så att den ligger över bakgrundsbilden */
+	text-align: center; /* Centrera texten horisontellt */
+	
+    }
+    
+    #hemText {
+	/* Stil för texten över den gröna rutan */
+	color: white; 
+	font-size: 24px; 
+	cursor: pointer;
+    }
+
+    /*För alla frukter*/
+    #grönRuta{
+	position: fixed;
+	top: 1cm;
+	left: 0%;
+	width: 30vw;
+	height: 150vh; 
+	background-color: #296829; /* Hexadecimal kod för ren grön färg */
+	z-index: 3; /* Så att den ligger över bakgrundsbilden */
+
+	display: flex;
+	    flex-direction: column;
+	align-items: center;		
+   }
+
+#rubrik{
+	
+	color: white;
+	font-size: 3.5vw; 
+	margin-top:1px ;
+	margin-bottom:10px ;
+	z-index: 4;
+	margin-top: 70px;
+	max-width: 310px; 
+	text-align: center;	
+}
+
+#text{
+	
+	color: white;
+	font-size: 1.5vw; 
+	margin-top:1px ;
+	margin-bottom:1px ;
+	z-index: 5;
+	max-width: 310px; 
+	text-align: center;	
+	
+}
+
+/*Krikon*/
+table {
+	border-collapse: collapse;
+	width: 40%;
+	Position: absolute;
+	left: 40%;
+	margin-top: 100px;
+	background-color: #97a997;
+	color: black;
+}
+
+td {
+	border: 2px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+    border: 2px solid black;
+	text-align: center;
+	padding: 8px;
+	background-color:#296829;   
+}
+
+/*Körsbär*/
+.bakgrund {
+	position: absolute;
+	width: 14vw;
+       height: 27vh;
+	background-color: white;
+	z-index: 6;
+	display: flex;
+	justify-content: center;
+    
+}
+
+
+.info {
+	position: absolute;
+    	margin-bottom: 5px;
+	width: 4.5vw;
+       height: 2.6vh;
+	background-color: black;
+	z-index: 7;
+	display: flex;
+	justify-content: center;	
+    	left: 11%;
+       top: 80%;
+    	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+.pris {
+	position: absolute;
+	width: 4.5vw;
+       height: 2.6vh;
+	background-color: black;
+	z-index: 7;
+	display: flex;
+	justify-content: center;
+    text-align: center;
+    left: 58%;
+       top: 80%;	
+}
+
+
+.rubrikRuta {
+    position: absolute;
+    margin-top:7px ;
+	color: black;
+	font-size: 1.2vw;
+	z-index: 8;
+    max-width: 10vw; 
+}
+
+
+.textRuta {
+    position: absolute;
+	color: white;
+    margin-top:3.5px ;
+	font-size: 1vw;
+	z-index: 8;
+    text-align: center;
+}
+
+.boxImage {
+    Position: absolute;
+    margin-top: 55px;
+      width: 11vw;
+	height: 12vh;
+	z-index: 7;
+}
+
+.InfoBox {
+       	display: none; 
+       	position: absolute;
+	width: 14vw;
+       	height: 27vh;
+	background-color: white;
+	z-index: 8; 
+	justify-content: center;
+	align-items: center;	
+}
+
+.infoText {
+       	color: black;
+	font-size: 1vw;
+}
+
+
+
+/*Rad 1*/
+#Sort1 {
+	top: 15%;
+	left: 35%;
+}
+
+#Sort2 {
+	top: 15%;
+	left: 50%;
+}
+
+#Sort3 {
+	top: 15%;
+	left: 65%;
+}
+
+#Sort4 {
+	top: 15%;
+	left: 80%;
+}
+
+/*Rad 2*/
+
+#Sort5 {
+	top: 45%;
+	left: 35%;
+}
+
+#Sort6 {
+	top: 45%;
+	left: 50%;
+}
+
+#Sort7 {
+	top: 45%;
+	left: 65%;
+}
+
+#Sort8 {
+	top: 45%;
+	left: 80%;
+}
+
+/*Rad 3*/
+#Sort9 {
+	top: 75%;
+	left: 35%;
+}
+
+#Sort10 {
+	top: 75%;
+	left: 50%;
+}
+
+#Sort11 {
+	top: 75%;
+	left: 65%;
+}
+
+#Sort12 {
+	top: 75%;
+	left: 80%;
+}
+/*Rad 4*/
+#Sort13 {
+	top: 105%;
+	left: 35%;
+}
+
+#Sort14 {
+	top: 105%;
+	left: 50%;
+}
+
+/*Om oss*/
+
+.mail-container {
+	    position: fixed;
+	   top: 80%;
+	    left: 15%;
+	    transform: translate(-50%, -50%);
+	    padding: 2%;
+	    background-color: #296829;
+	    z-index: 6;
+	max-width: 30vw;
+}
+
+
+.mail,.mail label,.mail input,.mail textarea {
+	color: black;
+	    display: block;
+	    margin-bottom: 0.5vw;
+}
+
+.mail input[type="submit"] {
+	background-color: #97a997;
+	color: black;
+	border: none;
+	padding: 1vw 1vw;
+	text-align: center;
+	display: inline-block;
+	font-size: 1vw;
+	margin-top: 0.5vw;
+	cursor: pointer;
+}
+
+/*Hitta hit*/
+#Karta {
+	Position: fixed;
+	margin-top: 12vh;
+	max-width: 100%;
+	width: 25%; 
+	height: auto; 
+	z-index: 4; 
+
+}
+
+#TextContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 110%;
+	max-width: 70%; 
+}
+
+@media screen and (max-width: 768px) {
+	#GronSidoRuta {
+		width: 30vw;
+		height: 150vh;
+		top: 1vh;
+		left: 0;
+		margin-top: 0;
+	      
+		align-items: flex-start;
+		padding: 10px;
+	      	overflow-y: auto;
+	      	background-color: #296829; /* Hexadecimal kod för ren grön färg */
+	      	z-index: 10; /* Så att den ligger över bakgrundsbilden */
+	      	display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+      	}
+
+	#TextContainer {
+		 max-width: 70%;
+		  margin-top: 0;
+	      margin-top: 135%;
+	      display: flex;
+		  flex-direction: column;
+	      text-align: center;
+	}
+
+	#Karta {
+		  
+	      Position: fixed;
+	      margin-top: 10vh;
+	      max-width: 100%;
+		  width: 25%; 
+		 height: auto; 
+		  z-index: 4; 
+	}
+
+	#TextGronRuta {
+		  font-size: 12px;
+	}
+      
+}
+
+#Fordon{
+      position: absolute;;
+	 top: 50%;
+	  left: 42vw;
+	  transform: translate(-50%, -50%);
+	  width: auto; 
+	 height: 90%; 
+	  z-index: 6; 
+}
+
+#TextBuss{
+      position: absolute;
+	 top: 25vh;
+	  right: 5vw; 
+	 transform: translate(0, -50%);
+      color: black;
+	  font-size: 24px; 
+      margin-top:1px ;
+	  margin-bottom:1px ;
+      text-align: center;
+      max-width: 40%; 
+      z-index: 7;	
+}
+
+#TextBil{
+      position: absolute;
+	 top: 53vh;
+	  right: 5vw; 
+	 transform: translate(0, -50%);
+      color: black;
+	  font-size: 24px; 
+      margin-top:1px ;
+	  margin-bottom:1px ;
+      text-align: center;
+      max-width: 40%; 
+      z-index: 7;	
+}
+
+#TextCykel{
+      position: absolute;
+	 top: 75vh;
+	  right: 5vw;
+	 transform: translate(0, -50%);
+      color: black;
+	  font-size: 24px; 
+      margin-top:1px ;
+	  margin-bottom:1px ;
+      text-align: center;
+      max-width: 40%; 
+      z-index: 7;	
+}
+
+@media (max-width: 850px) {
+	  #TextBuss,
+	  #TextBil,
+	  #TextCykel {
+	      font-size: 12px; 
+		     max-width: 30%; 
+	      overflow-y: auto; 
+	 }
+}
+
+/*Index*/
+header {
+	position: fixed;; 
+	width: 100%; 
+	height: 100vh; 
+	overflow: hidden; 
+}
+
+#bakgrundsbild {
+       position: fixed; 
+	top: 0;
+	left: 0;
+    margin: 1cm 0 0 0;
+	width: 100vw; 
+    height: 66.67vh; 
+	object-fit: cover; 
+	z-index: 4; 
+}
+
+#rubrikBakgrund {
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%; 
+    	height: 23%; 
+    	background-color: #296829cb;
+       	z-index: 5; 
+	max-width: 800px; 
+
+    	display: flex;
+    	text-align: center;
+    	justify-content: center; 
+	align-items: center; 
+	flex-direction: column; 
+}
+	
+
+#infoRuta {
+	position: fixed;
+	bottom: 14%;
+	left: 35%;
+	transform: translate(-50%, 50%);
+	width: 23vw;
+	height: 20vh; 
+	background-color: #296829; 
+	z-index: 6;  
+
+    	display: flex;
+	align-items: center; 
+	justify-content: center; 
+    	text-align: center;
+    	flex-direction: column; 
+}
+
+
+a.instagram-link {
+    color: white; 
+    margin-top: 3px; 
+}
+
+#textRuta {
+	position: fixed;
+	bottom: 14%;
+	left: 85%;
+	transform: translate(-50%, 50%);
+	width: 23vw;
+	height: 20vh;
+	background-color: #296829; 
+	z-index: 7;   
+
+    	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+    	text-align: center;
+    	flex-direction: column; 
+}
+
+#videoRuta {
+	
+	position: fixed;
+	bottom: 14%;
+	left: 60%;
+	transform: translate(-50%, 50%);
+	width: 20%;
+    	max-width: 297;
+	height: 20%;
+    	max-height: 191; 
+	background-color: black; 
+	z-index: 8;   
+
+}
+
+/*Sortiment*/
+
+#SvartRuta{
+
+	align-items: center;	
+
+	position: fixed;
+	   top: 1cm;
+	    left: 0%;
+	width: 30vw;
+	height: 150vh; 
+	background-color: black; /* Hexadecimal kod för ren grön färg */
+	z-index: 3; /* Så att den ligger över bakgrundsbilden */
+
+	display: flex;
+	    flex-direction: column;
+	align-items: center;
+   }
+
+  
+
+.bakgrund2 {
+	    position: fixed;
+	    width: 17vw;
+	   height: 35vh;
+	    background-color: #296829;
+	    z-index: 6;
+	    display: flex;
+	    justify-content: center;
+    
+}
+
+
+.bild {
+	Position: absolute;
+	margin-top: 65px;
+	  width: 13vw;
+	    height: 25vh;
+	    z-index: 6;
+}
+
+
+#positionÄpple{
+	    top: 15%;
+	    left: 35%;
+}
+
+#positionPäron {
+	   top: 15%;
+	    left: 55%;
+}
+
+#positionPlommon{
+	    top: 15%;
+	    left: 75%;
+}
+#positionKörsbär{
+	top: 55%;
+	left: 35%;
+}
+
+#positionKrikon{
+	top: 55%;
+	left: 55%;
+}
+
+#positionHäckplanta{
+	top: 55%;
+	left: 75%;
+}
+
+
+
+
+
+
+
+

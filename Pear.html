@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Päron</title>
+    
+    	<style>
+		body {
+			background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+		}
+
+
+	/*<section>
+		<h1>MENY</h1>
+		<!-- Lägg till den svarta rutan med id "blackOverlay" -->
+		<div id="SvartRektangel">
+			<p class="sökMenyText">SÖK</p>
+			<p class="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			       <nav class="submenu" id="submenu2">
+					<ul>
+						<li><a href="#">ÖPPETTIDER</a></li>
+						<li><a href="OmOss.html">OM OSS</a></li>
+						<li><a href="HittaHit.html">HITTA HIT</a></li>
+						<li><a href="#">KAFE</a></li>
+						<li><a href="Sortiment.html">SORTIMENT</a></li>
+						<li><a href="#">TJÄNSTER</a></li>
+						<li><a href="#">PRESENTKORT</a></li>
+				    	</ul>
+			       </nav>
+		       
+
+			       <!-- Lägg till den svarta rutan med id "blackOverlay" -->
+			       <div id="grönaRutanHem">
+				       <a href="index.html">
+					       <p id="hemText">HEM</p>
+				       </a>
+			</div>
+		       </div>  
+	</section>*/
+
+
+	/*<li id="sortimentItem">
+                       			<a href="Sortiment.html">SORTIMENT</a>
+
+
+					<!-- Underkategorierna till sortiment -->
+                        		<ul class="underkategori">
+                            
+                           	 		<li><a href="Apple.html">ÄPPLEN</a></li>
+                            			<li><a href="Pear.html">PÄRON</a></li>
+                            			<li><a href="Plommon.html">PLOMMON</a></li>
+			    			<li><a href="Korsbar.html">KÖRSBÄR</a></li>
+			    			<li><a href="Krikon.html">KRIKON</a></li>
+			    			<li><a href="Hackplanta.html">HÄCKPLANTA</a></li>
+					</ul>
+                    		</li>
+				*/
+
+
+	/*<div id="SvartRektangel">
+            <p class="sökMenyText">SÖK</p>
+            <p class="sökMenyText" id="toggleSubMenu">MENY</p>
+
+            	<nav class="submenu" id="submenu">
+                
+                	<ul>
+                    		<li><a href="#">ÖPPETTIDER</a></li>
+                    		<li><a href="OmOss.html">OM OSS</a></li>
+                    		<li><a href="HittaHit.html">HITTA HIT</a></li>
+                    		<li><a href="#">KAFE</a></li>
+				    <li onmouseover="showSubcategories()" onmouseout="hideSubcategories()">
+					<a href="#">SORTIMENT</a>
+					<!-- Underkategorier som visas när musen rör över "SORTIMENT" -->
+					<ul id="underkategorier" style="display: none;">
+						<li><a href="Apple.html">ÄPPLEN</a></li>
+						<li><a href="Pear.html">PÄRON</a></li>
+						<li><a href="Plommon.html">PLOMMON</a></li>
+						<li><a href="Korsbar.html">KÖRSBÄR</a></li>
+						<li><a href="Krikon.html">KRIKON</a></li>
+						<li><a href="Hackplanta.html">HÄCKPLANTA</a></li>
+					</ul>
+				    </li>
+		    		
+                   
+                    		<li><a href="#">TJÄNSTER</a></li>
+                    		<li><a href="#">PRESENTKORT</a></li>
+                	</ul>
+            	</nav>*/
+
+	.underkategori a {
+            font-size: 16px; /* Justera storleken efter dina önskemål */
+	    color:#97a997 ;
+
+        }
+
+	</style>
+
+	
+
+</head>
+
+<body>
+	
+	<section>
+		<h1>MENY</h1>
+		<div id="SvartRektangel" >
+			<p class="sökMenyText">SÖK</p>
+			<p class="sökMenyText" onclick="visaMeny()">MENY</p>
+		    
+			<nav class="submenu" id="submenu" >
+				
+			    	<ul>
+					<li><a href="#">ÖPPETTIDER</a></li>
+					<li><a href="OmOss.html">OM OSS</a></li>
+					<li><a href="HittaHit.html">HITTA HIT</a></li>
+					<li><a href="#">KAFE</a></li>
+					<li onmouseover="visaSortiment()" onmouseout="gömSortiment()">
+				    		<a href="Sortiment.html">SORTIMENT</a>
+				    		<!-- Underkategorier som visas när musen rör över "SORTIMENT" -->
+				    		<ul id="sorter" style="display: none;">
+							<li><a href="Apple.html">Äpplen</a></li>
+							<li><a href="Pear.html">Päron</a></li>
+							<li><a href="Plommon.html">Plommon</a></li>
+							<li><a href="Korsbar.html">Körsbär</a></li>
+							<li><a href="Krikon.html">Krikon</a></li>
+							<li><a href="Hackplanta.html">Häckplanta</a></li>
+						</ul>
+					</li>
+					<li><a href="#">TJÄNSTER</a></li>
+					<li><a href="#">PRESENTKORT</a></li>
+			    	</ul>
+			
+			</nav>
+			
+            		<div id="grönaRutanHem">
+                		<a href="index.html">
+                   			<p id="hemText">HEM</p>
+               			</a>
+            		</div>
+		</div>
+       
+	</section>	
+	
+
+	<div id="grönRuta">
+		<p id="rubrik">PÄRON</p>
+		<p id="text">Päron är starkväxande träd som med tiden blir ganska höga, ca 6 m. Nog finns det sorter som passar i de högre odlingszonerna men det är bra att ge dem ett gynnsamt läge. Sol, väldränerad jord och skydd mot nordliga vindar. Flera av våra päronsorter är helt självfertila medan vissa sorter behöver ett annat päronträd som kompis för att ge stor skörd. Träden kostar 750 kr/st.
+
+	</div>
+
+	<script src="meny.js"></script>
+
+</body>
+
+    
+</html>

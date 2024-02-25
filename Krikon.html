@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Krikon</title>  
+
+<style>
+	body {
+		    background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+	}
+
+
+
+	@media print{
+    		
+    		#grönRuta {
+        		
+        		width: 30%; 
+   		}
+
+    		table {
+        		width: 50%; 
+			page-break-inside: avoid;
+			margin-top: 30px;
+    		}
+		
+		td,th{
+			padding: 3px;
+		}
+	}
+
+
+	
+</style>
+</head>
+
+
+<body>
+
+	<section>
+		<h1>MENY</h1>
+		<script src="meny.js"></script>
+		<div id="SvartRektangel" >
+			<p class="sökMenyText">SÖK</p>
+			<p class="sökMenyText" onclick="visaMeny()">MENY</p>
+		    
+			<nav class="submenu" id="submenu" >
+				
+			    	<ul>
+					<li><a href="#">ÖPPETTIDER</a></li>
+					<li><a href="OmOss.html">OM OSS</a></li>
+					<li><a href="HittaHit.html">HITTA HIT</a></li>
+					<li><a href="#">KAFE</a></li>
+					<li onmouseover="visaSortiment()" onmouseout="gömSortiment()">
+				    		<a href="Sortiment.html">SORTIMENT</a>
+				    		<!-- Underkategorier som visas när musen rör över "SORTIMENT" -->
+				    		<ul id="sorter" style="display: none;">
+							<li><a href="Apple.html">Äpplen</a></li>
+							<li><a href="Pear.html">Päron</a></li>
+							<li><a href="Plommon.html">Plommon</a></li>
+							<li><a href="Korsbar.html">Körsbär</a></li>
+							<li><a href="Krikon.html">Krikon</a></li>
+							<li><a href="Hackplanta.html">Häckplanta</a></li>
+						</ul>
+					</li>
+					<li><a href="#">TJÄNSTER</a></li>
+					<li><a href="#">PRESENTKORT</a></li>
+			    	</ul>
+			
+			</nav>
+			
+            		<div id="grönaRutanHem">
+                		<a href="index.html">
+                   			<p id="hemText">HEM</p>
+               			</a>
+            		</div>
+		</div>
+       
+	</section>
+
+	<div id="grönRuta">
+		<p id="rubrik">KRIKON</p>
+		<p id="text">Krikon (Prunus domestica ssp. insititia) är en underart, med mindre träd och torniga grenar. Fruktköttet släpper inte lika lätt från kärnan men de är lika goda som plommon (Prunus domestica).
+	</div>
+
+    	<table>
+        	<tr>
+            		<th>Namn</th>
+            		<th>Beskrivning</th>
+            		<th>Art</th>
+            		<th>Zon</th>
+        	</tr>
+
+       		<tr>
+            		<td>Krikon</td>
+            		<td>Över 200 år gammal sort. Liten, blålila, rund frukt. Utmärkt delikatessfrukt som passar även till sylt. Självfertil.</td>
+            		<td>Prunus domestica ssp. insititia</td>
+            		<td>Zon 6</td>
+        	</tr>
+
+        	<tr>
+            		<td>GULKRIKON 'VOITTO'</td>
+            		<td>Ovanliga, gulorangea krikon med god och aromatisk smak. Rotäkta. Höjd 3 m. Självfertil.</td>
+            		<td>Prunus domestica ssp. insititia</td>
+            		<td>Zon 5-6</td>
+        	</tr>
+
+        	<tr>
+            		<td>GULKRIKON 'WILMA'</td>
+            		<td>Ovanliga, gulorangea krikon med god och aromatisk smak. Rotäkta. Höjd 3 m. Självfertil.</td>
+            		<td>Prunus domestica ssp. insititia</td>
+            		<td>Zon 6</td>
+        	</tr>
+
+        	<tr>
+           		<td>HIMBERGS BLÅKRIKON</td>
+            		<td>Snabbväxande och rikbärande lokalsort från landskapet Egentliga Finland. Frukterna är aningen större än Sinikka och mycket saftiga och aromatiska. Frisk sort. Självfertil.</td>
+            		<td>Prunus domestica ssp. insititia</td>
+            		<td>Zon 5</td>
+        	</tr>
+
+        	<tr>
+            		<td>SILVAST</td>
+            		<td>Mycket vinterhärdig lokalsort från Jeppo i Österbotten. Frukten är söt, blålila och mognar tidigt. Tidig blomning.</td>
+            		<td>Prunus domestica ssp. insititia</td>
+            		<td>Zon 6</td>
+        	</tr>
+    </table>
+
+	
+
+
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+    </script>
+
+</body>
+
+    
+</html>
+
+
